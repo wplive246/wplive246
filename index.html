@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT - AI助手</title>
+    <link rel="stylesheet" href="../shared/index.css" />
+    <link rel="stylesheet" href="./specific_localai.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+    <body>
+    <div class="app-container">
+        <!-- 主内容区 -->
+        <main class="main-content">
+           <header class="main-header">
+                <img src="../../assets/images/title.png" alt="titie" height="60">
+                <h1 style="margin: 0;">下一代网络数据通信智能实训室-本地大模型</h1>
+           </header>
+        <!-- 在 main-content 中，features-section 下面添加对话区域 -->
+        <section class="conversation-section">
+            <div class="conversation-container" id="conversation-container">
+                <!-- 对话消息将在这里动态添加 -->
+            </div>
+        </section>
+            <div class="features-modal" id="features-modal">
+            <div class="features-modal-content">
+                <span class="close-modal material-icons">close</span>
+            <section class="features-section">
+                <!-- 原有的功能卡片内容保持不变 -->
+            <section class="features-section">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="material-icons">edit</span>
+                    </div>
+                    <h3>实训信息采集</h3>
+                    <p>采集物理设备承载的各项信息</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="material-icons">search</span>
+                    </div>
+                    <h3>天气查询</h3>
+                    <p>智能天气信息查询，获取精准答案</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="material-icons">code</span>
+                    </div>
+                    <h3>查看节点</h3>
+                    <p>查看物理节点信息</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="material-icons">translate</span>
+                    </div>
+                    <h3>添加节点</h3>
+                    <p>高质量的多语言翻译</p>
+                </div>
+                <!-- 其他功能卡片... -->
+            </section>
+            </div>
+            </div>
+            <!-- 输入区域 -->
+    <div class="input-container">
+    <div style="display: flex; justify-content: flex-start;">
+        <!-- 添加更多功能按钮 -->
+        <button class="more-features-btn">
+            <span class="material-icons">apps</span>
+            <span class="feature-text">更多功能</span>
+        </button>
+    </div>
+    <div class="input-box">
+        <textarea placeholder="有什么可以帮忙的？" rows="1"></textarea>
+        <div class="input-actions">
+            <button class="clear-chat-btn">
+                <span class="material-icons">delete</span>
+            </button>
+            <button class="send-btn">
+                <span class="material-icons">send</span>
+            </button>
+        </div>
+    </div>
+    <p class="disclaimer">本地模型可能会产生不准确的信息，请谨慎验证重要内容。</p>
+    </div>
+    <!-- 语音状态指示器 -->
+    <div class="speech-status" id="speech-status">正在聆听...</div>
+    <script src="../shared/index.min.js "></script>
+    <script src="./specific_localai.js" type="module"></script>
+    </body>
+</html>
